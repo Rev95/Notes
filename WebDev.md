@@ -1,0 +1,2 @@
+- HTTPS - HTTP Secure(over SSL)
+- [**How SSL encrytion and Certificate Athority works**](https://github.com/ychaouche/SSL-diagram) - [image-link](http://i.imgur.com/5T2fJsG.png)

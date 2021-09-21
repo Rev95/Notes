@@ -1,0 +1,58 @@
+# Git Commands
+ - Repository(.git folder), Working Directory, Staging Area
+ - .gitignore file
+    + .log 
+ - git config --global user.name "Name"
+ - git config --global user.email "Email"
+ - git config --global core.editor "notepad++ -multiInst -nosession"
+ - git config --global -e	// open global config file
+ - git config --global --list
+ - git config --global diff.tool p4merge
+ - git config --global difftool.p4merge.path "C:/Program Files/Perforce/p4merge.exe"
+ - git config --global difftool.prompt false
+ - git config --global merge.tool p4merge
+ - git config --global mergetool.p4merge.path "C:/Program Files/Perforce/p4merge.exe"
+ - git config --global mergetool.prompt false
+ - git init foldername
+ - git status
+ - git add filename
+ - git commit -m "comment"
+ - git commit -am "comment"	// for adding into staging and commiting in single step
+ - git log
+ - git show
+ - git ls-files
+ - git reset HEAD README.md	// to unstage
+ - git checkout -- README.md	// to update file to that of git latest commit
+ - git log --oneline --graph --decorate --all
+ - git config --global alias.hist "log --oneline --graph --decorate --all"
+ - git hist -- LICENSE.md
+ - git mv file; git rm file & commit
+ - git add -A	// stage all the modified files for manual update of rename and deletion\
+ - git diff de8d541 HEAD / git difftool de8d541 HEAD
+ - git branch	// list all git branches
+ - git checkout -b updates	// create updatesbranch
+ - git checkout master 	// switch to master branch
+ - git branch -d updates	// delete updates branch
+ - git merge updates	// merge updates branch in current
+ - git mergetool	// if Fast-forward merge fails
+ - git tag mytag
+ - git tag -d mytag
+ - git tag -a v1.0 -m "First Tag 1.0"
+ - git show v1.0
+ - git stash
+ - git stash pop
+ - git stash list
+ - git reset 85bb5a9 --soft // just changes the HEAD 	
+ - git reset 85bb5a9 --mixed	// unstages all the changes
+ - git reset 85bb5a9 --hard	// all pending and staging area changes will be wiped
+ - git reflog
+ - git remote add origin https://github.com/Rev95/demo.git
+ - git remote -v
+ - git clone url folder-name
+ - git push origin master
+ - git push	// simple push
+ - git pull	// will first fetch all updates from remote repo and then merge
+ - git fetch
+ - git remote set-url origin url	// to update remote url
+ - git remote show origin
+ - git show SHA1
